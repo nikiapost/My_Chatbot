@@ -1,0 +1,148 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - good afternoon
+  #  - language
+
+# - intent: give_name
+#   examples: |
+#     - my name is [niki](user_name)
+#     - you can call me [kostas](user_name)
+#     - this is [stella](user_name)
+#     - [pinelopi](user_name)
+#     - it's [niki](user_name)
+#     - i'm [mavra](user_name)
+#     - people call me [filip](user_name)
+#     - i go by [juan](user_name)
+
+- intent: change_opinion
+  examples: |
+    - give me directions
+    - what's the weather like?
+    - what do you know about cars?
+    - are you human?
+    - i want to talk about something else
+
+# -intent: fallback
+#  examples: |
+#   - something else
+#   - are you human?
+#   - don't want 
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - correct
+    - yeap
+    - yeah
+    - y
+
+- intent: deny
+  examples: |
+    - no
+    - i don't think so
+    - no way
+    - not really
+    - no way
+    - nope
+    - probably not
+    - n
+
+- intent: searchword
+  examples: |
+    - find the meaning of the word [bank](word)
+    - give me the meaning of the word [bank](word)
+    - what does the word [bank](word) mean?
+    - can you tell me all the meanings of the word [bank](word)?
+    - i don't know the word [bank](word), can you help me?
+
+# - intent: searchphrase
+#   examples: |
+#     - what does this phrase mean: [It's raining cats and dogs](phrase)
+#     - give me the meaning of the phrase [It's raining cats and dogs](phrase)
+#     - help me out here. [It's raining cats and dogs](phrase). What does it mean?
+#     - look up the definition for the phrase [It's raining cats and dogs](phrase).
+#     - [it's raining cats and dogs](phrase), what does that mean?
+
+- intent: searchsynonyms_word
+  examples: |
+    - find the synonyms of the word [bank](word)
+    - give me the synonyms of the word [bank](word)
+    - what are the synonyms of the word [bank](word)?
+    - can you tell me all the synonyms of the word [bank](word)?
+    - i don't know any synonyms of the word [bank](word), can you help me?
+    - are there any synonyms of the word [bank](word)?
+
+# - intent: searchsynonyms_phrase
+#   examples: |
+#     - find the synonyms of the phrase [It's raining cats and dogs](phrase)
+#     - give me the synonyms of the phrase [It's raining cats and dogs](phrase)
+#     - what are the synonyms of the phrase [It's raining cats and dogs](phrase)?
+#     - can you tell me all the synonyms of the phrase [It's raining cats and dogs](phrase)?
+#     - i don't know any synonyms of the phrase [It's raining cats and dogs](phrase), can you help me?
+#     - are there any synonyms of the phrase [It's raining cats and dogs](phrase)?
+
+
+
+# - intent: language
+#   examples: |
+#     - Spanish
+#     - Italian
+
+
+- intent: translateword_S
+  examples: |
+    - can you translate the word [bank](word) in [Spanish](language)?
+    - what is the [Spanish](language) translation for the word [bank](word)?
+    - how do i say [bank](word) in [Spanish](language)?
+    - translate the word [bank](word) in [Spanish](language)
+    - give me the word [bank](word) in [Spanish](language)
+    - look up the [Spanish](language) translation of the word [bank](word)
+
+- intent: translateword_I
+  examples: | 
+    - can you translate the word [bank](word) in [Italian](language)?
+    - what is the [Italian](language) translation for the word [bank](word)?
+    - how do i say [bank](word) in [Italian](language)?
+    - translate the word [bank](word) in [Italian](language)
+    - give me the word [bank](word) in [Italian](language)
+    - look up the [Italian](language) translation of the word [bank](word)
+
+# - intent: translatephrase_S
+#   examples: |
+#     - can you translate the phrase [It's raining cats and dogs](phrase) in [Spanish](language)?
+#     - what is the [Spanish](language) translation for the phrase [It's raining cats and dogs](phrase)?
+#     - how do i say It's raining cats and dogs in [Spanish](language)?
+#     - translate the phrase [It's raining cats and dogs](phrase) in [Spanish](language)
+#     - give me the phrase [It's raining cats and dogs](phrase) in [Spanish](language)
+#     - look up the [Spanish](language) translation of the phrase [It's raining cats and dogs](phrase)
+    
+# - intent: translatephrase_I
+#   examples: |    
+#     - can you translate the phrase [It's raining cats and dogs](phrase) in [Italian](language)?
+#     - what is the [Italian](language) translation for the phrase [It's raining cats and dogs](phrase)?
+#     - how do i say It's raining cats and dogs in [Italian](language)?
+#     - translate the phrase [It's raining cats and dogs](phrase) in [Italian](language)
+#     - give me the phrase [It's raining cats and dogs](phrase) in [Italian](language)
+#     - look up the [Italian](language) translation of the phrase [It's raining cats and dogs](phrase)

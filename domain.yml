@@ -1,0 +1,166 @@
+version: "3.1"
+
+intents:
+  - greet
+#  - give_name
+  - goodbye
+  - affirm
+  - deny
+#  - mood_great
+#  - mood_unhappy
+  - searchword
+#  - searchphrase
+  - searchsynonyms_word
+#  - searchsynonyms_phrase
+  - translateword_S
+  - translateword_I
+#  - translatephrase_S
+#  - translatephrase_I
+#  - fallback
+  - change_opinion
+#  - inform
+#  - language
+
+# slots: 
+#   language:
+#     type: categorical
+#     values:
+#       - Spanish
+#       - Italian
+#     mappings:
+#       - type: from_entity
+#         entity: language
+  # word:
+  #   type: text
+  #   mappings:
+  #     - type: from_trigger_intent
+  #       value: "bank"
+  #       intent: searchword
+  # phrase:
+  #   type: text
+  #   mappings:
+  #     - type: from_trigger_intent
+  #       value: "It's raining cats and dogs"
+  #       intent: searchword
+
+entities:
+#  - user_name
+  - word
+  - language
+  - phrase
+  
+
+responses:
+#  utter_name:
+#  - text: "Hey! What's your name?"
+
+  utter_hey:
+  - text: "Hey!"
+
+#  utter_name_received:
+#    - text: "Nice to meet you, {user_name}! How are you doing?"
+
+#  utter_cheer_up:
+#  - text: "THE BAD DAYS WILL END, {user_name}"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_anything_else:
+  - text: "Do you need anything else?"
+
+  utter_do_not_understand:
+  - text: "Sorry, i can not understand you. Rephrase please"
+
+#  utter_happy:
+#  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_searchword:
+  - text: "Of course! Here are three different meanings of the word bank:
+  a) a long pile or heap
+  b) a business institution for receiving, lending, and keeping money safe.
+  c) the slope of land that borders a stream, river, or lake"
+
+  # utter_searchphrase:
+  # - text: "Of course! The meaning of the phrase It's raining cats and dogs means:
+  #  to rain heavily."
+
+  utter_searchsynonyms_word:
+  - text: "Some synonyms of bank as a long pile are row , series , array , group , 
+  sequence , line.
+  For the word bank as a business institution some synonyms are: savings bank, 
+  commercial bank, credit union, investment firm, banking house, depository. 
+  For the meaning as a slope of land that bordes a river some synonyms are:edge , 
+  shore , shoreline, coast , lakeside, riverside, seaside , waterfront, seafront."
+
+  # utter_searchsynonyms_phrase:
+  # - text: "It's raining cats and dogs it's like sayin there is a rainstorm, or storm , 
+  # thunderstorm , thundershower, tempest, downpour"
+
+  # utter_language:  
+  # - text: "Say 'Spanish' or 'Italian' to underastand the language target."
+
+  utter_translateword_S:
+  - text: "Of course! The word bank in [Spanish] (language), according to it's meaning could be:
+  a) for a long pile or heap the word is banco
+  b) for a business institution for money the word is banco (same as before)
+  c) for a slope of land that borders a river or lake the word is orilla"
+
+  utter_translateword_I:
+  - text: "Of course! The word bank in [Italian] (language), according to it's meaning could be:
+  a) for a long pile or heap the word is banco or fila
+  b) for a business institution for money the word is banca (same as before)
+  c) for a slope of land that borders a river or lake the word is sponda or riva"
+
+  # utter_translatephrase_S:
+  # - text: "Of course! The expression It's raining cats and dogs has three possible
+  # translations in [Spanish]language:
+  # a) llover a cántaros
+  # b) llover a mares
+  # c) caer soretes de punta"
+
+  # utter_translatephrase_I:
+  # - text: "Of course! The expression It's raining cats and dogs has two possible
+  # translations in [Italian]language:
+  # a) piove a catinelle
+  # b) piovere a secchiate"
+
+
+# actions:
+#   - action_searchword
+#   - action_searchphrase
+#   - action_searchsynonyms_word
+#   - action_searchsynonyms_phrase
+#   - action_language
+#   - action_translateword
+#   - action_translatephrase
+  
+
+#slots:
+#  user_name:
+#    type: text
+#    mappings:
+#     - type: from_entity
+#        entity: user_name
+#  word:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: word
+  # language:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: language
+  # phrase:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: phrase
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

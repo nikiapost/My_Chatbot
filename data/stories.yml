@@ -1,0 +1,73 @@
+version: "3.1"
+
+stories:
+
+- story: search_word
+  steps:
+  - intent: greet
+  - action: utter_hey
+  - intent: searchword
+  - action: utter_searchword
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_anything_else
+  # - intent: searchphrase
+  # - action: utter_searchphrase
+  # - action: utter_did_that_help
+  # - intent: affirm
+  # - action: utter_anything_else
+  - intent: deny
+  - action: utter_goodbye
+
+- story: search_synonyms
+  steps:
+  - intent: greet
+  - action: utter_hey
+  - intent: searchsynonyms_word
+  - action: utter_searchsynonyms_word
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_anything_else
+  # - intent: searchsynonyms_phrase
+  # - action: utter_searchsynonyms_phrase
+  # - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: translate_words
+  steps:
+  - intent: greet
+  - action: utter_hey
+  - intent: translateword_S
+  - action: utter_translateword_S
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_anything_else
+  - intent: translateword_I
+  - action: utter_translateword_I
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_anything_else
+  # - intent: translatephrase_I
+  # - action: utter_translatephrase_I
+  # - action: utter_anything_else
+  # - intent: translatephrase_S
+  # - action: utter_translatephrase_S
+  - intent: change_opinion
+  - action: utter_do_not_understand
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# - story: other_conversations
+#   steps:
+#   - intent: change_opinion
+#   - action: utter_do_not_understand
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# - story: fallback
+#   steps:
+#   - intent: fallback
+#   - action: utter_do_not_understand
+#   - action: utter_anything_else

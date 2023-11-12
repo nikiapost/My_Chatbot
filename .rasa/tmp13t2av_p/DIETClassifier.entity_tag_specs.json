@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-language",
+      "2": "I-language",
+      "3": "L-language",
+      "4": "U-language",
+      "5": "B-phrase",
+      "6": "I-phrase",
+      "7": "L-phrase",
+      "8": "U-phrase",
+      "9": "B-word",
+      "10": "I-word",
+      "11": "L-word",
+      "12": "U-word",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-language": 1,
+      "I-language": 2,
+      "L-language": 3,
+      "U-language": 4,
+      "B-phrase": 5,
+      "I-phrase": 6,
+      "L-phrase": 7,
+      "U-phrase": 8,
+      "B-word": 9,
+      "I-word": 10,
+      "L-word": 11,
+      "U-word": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

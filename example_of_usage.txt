@@ -1,0 +1,50 @@
+2023-11-12 16:37:41 INFO     root  - Starting Rasa server on http://0.0.0.0:5005        
+2023-11-12 16:37:41 INFO     rasa.core.processor  - Loading model models\20231112-161114-many-bag.tar.gz...
+2023-11-12 16:38:18 WARNING  rasa.shared.utils.common  - The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2023-11-12 16:38:27 INFO     root  - Rasa server is up and running.
+Bot loaded. Type a message and press enter (use '/stop' to exit):
+Your input ->  hi
+Hey!
+Your input ->  find the meaning of the wors bank
+Of course! Here are three different meanings of the word bank: a) a long pile or heap b) a business institution for receiving, lending, and keeping money safe. c) the slope of land that borders a stream, river, or lake
+Did that help you?
+Your input ->  yes
+Do you need anything else?
+Your input ->  find the synonyms of the word bank
+Some synonyms of bank as a long pile are row , series , array , group , sequence , line. For the word bank as a business institution some synonyms are: savings bank, commercial bank, credit union, investment firm, banking house, depository. For the meaning as a slope of land that bordes a river some synonyms are:edge , shore , shoreline, coast , lakeside, riverside, seaside , waterfront, seafront.
+Did that help you?
+Your input ->  yes
+Do you need anything else?
+Your input ->  can you translate the word bank in Italian?
+Your input ->  can you translate the word bank in Spanish?
+Of course! The word bank in [Spanish](language), according to it's meaning could be: a) for a long pile or heap the word is banco b) for a business institution for money the word is banco (same as before) c) for a slope of land that borders a river or lake the word is orilla
+Did that help you?
+Your input ->  yes
+Do you need anything else?
+Your input ->  no
+Your input ->  bye
+Bye
+Your input ->  hey there
+Your input ->  hi
+Your input ->  hi
+Your input ->  i don't know the word bank, can you help me?
+Of course! Here are three different meanings of the word bank: a) a long pile or heap b) a business institution for receiving, lending, and keeping money safe. c) the slope of land that borders a stream, river, or lake
+Did that help you?
+Your input ->  yes
+Do you need anything else?
+Your input ->  how do i say bank in Spanish?
+Of course! The word bank in [Spanish](language), according to it's meaning could be: a) for a long pile or heap the word is banco b) for a business institution for money the word is banco (same as before) c) for a slope of land that borders a river or lake the word is orilla
+Did that help you?
+Your input ->  yes
+Do you need anything else?
+Your input ->  How do i say bank in Italian?
+Your input ->  can you tell me all the synonyms of the word bank?
+Some synonyms of bank as a long pile are row , series , array , group , sequence , line. For the word bank as a business institution some synonyms are: savings bank, commercial bank, credit union, investment firm, banking house, depository. For the meaning as a slope of land that bordes a river some synonyms are:edge , shore , shoreline, coast , lakeside, riverside, seaside , waterfront, seafront.
+Did that help you?
+Your input ->  no
+Your input ->  yes
+Do you need anything else?
+Your input ->  no
+Your input ->  bue
+Bye
+Your input ->  
